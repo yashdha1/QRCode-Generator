@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>QR Code Generator</h1>
+      <div class="innerBox">
+        <input type="text" class="url" placeholder="Input link here" value="" />
+        <div class="qrBox">
+          <div class="sizeBox">
+            <p>Select QR Size</p>
+            <select name="dropDown" id="sizes">
+              <option value="100" selected>100*100</option>
+              <option value="200">200*200</option>
+              <option value="300">300*300</option>
+              <option value="400">400*400</option>
+              <option value="500">500*500</option>
+              <option value="600">600*600</option>
+              <option value="700">700*700</option>
+              <option value="800">800*800</option>
+              <option value="900">900*900</option>
+            </select>
+          </div>
+          <div class="imgKaBox">
+            <div class="qrImg"></div>
+          </div>
+          <!-- qr final image -->
+
+          <div class="outputs">
+            <button class="generate">GENERATE</button>
+            <button class="download" download="QR_Code.png">DOWNLOAD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+    <!-- <script src="qrc.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
